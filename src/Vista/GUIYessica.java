@@ -33,6 +33,7 @@ public class GUIYessica extends javax.swing.JFrame {
         btnAgregar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         lblCompartir = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,6 +66,8 @@ public class GUIYessica extends javax.swing.JFrame {
 
         lblCompartir.setText("Compartir:");
 
+        jLabel1.setText("Aaron Galagarza ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -74,7 +77,10 @@ public class GUIYessica extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCompartir)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblCompartir)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel1))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblNombre)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -100,7 +106,9 @@ public class GUIYessica extends javax.swing.JFrame {
                     .addComponent(lblNombre)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
-                .addComponent(lblCompartir)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCompartir)
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalir)
@@ -162,6 +170,7 @@ public class GUIYessica extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCompartir;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblTitulo;
