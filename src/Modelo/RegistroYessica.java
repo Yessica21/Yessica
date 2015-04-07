@@ -9,7 +9,6 @@ package Modelo;
  *
  * @author usuario
  */
-public class Objeto {
-    
+public class RegistroYessica {
     
 }
